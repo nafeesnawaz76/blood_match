@@ -61,12 +61,13 @@ class WelcomeScreen extends StatelessWidget {
                 child: const Text(
                   'Sign In',
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w800,
                     color: Colors.white,
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               OutlinedButton(
                 onPressed: () {
                   // Navigate to Sign Up screen
@@ -87,7 +88,8 @@ class WelcomeScreen extends StatelessWidget {
                 child: const Text(
                   'Sign Up',
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w800,
                     color: Colors.red,
                   ),
                 ),

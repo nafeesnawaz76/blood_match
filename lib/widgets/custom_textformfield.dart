@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {
   final String hintText;
-  final IconData? icon;
+  // final IconData? icon;
   final TextInputType keyboardType;
   final TextInputAction textInputAction;
   final TextEditingController? controller;
@@ -14,7 +14,7 @@ class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
     super.key,
     required this.hintText,
-    this.icon,
+    // this.icon,
     this.keyboardType = TextInputType.text,
     this.textInputAction = TextInputAction.next,
     this.controller,
@@ -32,7 +32,7 @@ class CustomTextFormField extends StatelessWidget {
             alignment: Alignment.centerLeft,
             child: Text(
               fieldname,
-              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
             )),
         const SizedBox(height: 5),
         TextFormField(
@@ -40,10 +40,14 @@ class CustomTextFormField extends StatelessWidget {
           controller: controller,
           decoration: InputDecoration(
             suffixIcon: suffixicn,
-            prefixIcon: Icon(icon, color: const Color(0xff5563AA)),
+            // prefixIcon: Icon(icon, color: const Color(0xff5563AA)),
             hintText: hintText,
+            focusedBorder: OutlineInputBorder(
+              borderSide: const BorderSide(color: Colors.red),
+              borderRadius: BorderRadius.circular(30),
+            ),
             border: OutlineInputBorder(
-              borderSide: const BorderSide(color: Color(0xff5563AA)),
+              borderSide: const BorderSide(color: Colors.red),
               borderRadius: BorderRadius.circular(30),
             ),
           ),

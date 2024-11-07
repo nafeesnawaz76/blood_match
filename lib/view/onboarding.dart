@@ -1,4 +1,3 @@
-import 'package:blood/view/home_screen.dart';
 import 'package:blood/view/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
@@ -69,7 +68,7 @@ class OnboardingScreen extends StatelessWidget {
         showSkipButton: true,
         skip: const Text(
           "SKIP",
-          style: TextStyle(color: Colors.red),
+          style: TextStyle(color: Colors.red, fontSize: 16),
         ),
         next: const CircleAvatar(
           radius: 24,
